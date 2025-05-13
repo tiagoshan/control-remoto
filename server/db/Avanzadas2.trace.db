@@ -1,6 +1,0 @@
-2024-09-09 21:05:04.716358-05:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DIRECCION" not found (this database is empty); SQL statement:
-INSERT INTO direccion (municipio, departamento, pais, calle, carrera, coordenada) VALUES (?, ?, ?, ?, ?, ?) [42104-232]
-2024-09-09 21:06:23.688030-05:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PERSONA" not found (this database is empty); SQL statement:
-SELECT p.id, p.nombre, p.apellido, d.municipio, d.departamento, d.pais, d.calle, d.carrera, d.coordenada, e.salario, c.nombrecargo AS cargo FROM persona p JOIN empleado e ON p.id = e.persona_id JOIN direccion d ON p.direccion_id = d.id JOIN cargo c ON e.cargo_id = c.id [42104-232]
